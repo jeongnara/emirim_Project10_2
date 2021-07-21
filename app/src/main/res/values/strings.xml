@@ -3,4 +3,6 @@
     <string name="btn_done">투표 종료</string>
     <string name="btn_back">돌아가기</string>
     <string name="title">제일 잘생긴 사진 투표</string>
+    <string name="btn_start">자동보기시작</string>
+    <string name="btn_stop">자동보기정지</string>
 </resources>

@@ -20,6 +20,15 @@ public class ResultActivity extends AppCompatActivity {
         int[] voteCount = intent.getIntArrayExtra("voteCount");
         String[] imgNames = intent.getStringArrayExtra("imgNames");
 
+        int max = 0;
+        int index = 0;
+        for (int i = 0; i < voteCount.length; i++){
+            if(voteCount[i] > max){
+                max = voteCount[i];
+                index = i;
+            }
+        }
+
         TextView[] tv = new TextView[imgNames.length];
         RatingBar[] rb = new RatingBar[imgNames.length];
 
